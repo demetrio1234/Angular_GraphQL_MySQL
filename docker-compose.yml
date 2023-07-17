@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: arts_shop
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - 3307:3306
+    volumes:
+      - ./database/data:/var/lib/mysql
+      - ./database/initdb:/docker-entrypoint-initdb.d
+    networks:
+      - backend_network
+
+  api:
+    build: ./backend
+    ports:
+      - "4000:4000"
+    depends_on: 
+      - db
+    networks:
+      - backend_network
+    environment:
+      DB_HOST: db
+      DB_USER: user
+      DB_PASS: password
+      DB_NAME: arts_shop
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    networks:
+      - backend_network
+
+networks:
+  backend_network:
+    driver: bridge
+
