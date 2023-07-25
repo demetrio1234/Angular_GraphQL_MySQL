@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LeftbarComponent } from './leftbar/leftbar.component';
 import { RightbarComponent } from './rightbar/rightbar.component';
-import { FooterComponent } from './footer/footer.component';
 import { CenterComponent } from './center/center.component';
+import { PostComponent } from './post/post.component';
+import { PostElementComponent } from './post-element/post-element.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,9 @@ import { CenterComponent } from './center/center.component';
     NavbarComponent,
     LeftbarComponent,
     RightbarComponent,
-    FooterComponent,
-    CenterComponent
+    CenterComponent,
+    PostComponent,
+    PostElementComponent
   ],
   imports: [
     BrowserModule,
