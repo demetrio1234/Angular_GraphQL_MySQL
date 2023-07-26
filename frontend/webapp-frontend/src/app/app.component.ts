@@ -9,16 +9,26 @@ import { PostComponent } from './post/post.component';
 export class AppComponent implements AfterViewInit {
 
   constructor(private cd: ChangeDetectorRef) {
-    
+
   }
-  
 
-  title = 'webapp-frontend';
 
-  @ViewChild(PostComponent) childComponent: any;
+  title: string = 'webapp-frontend';
+
+  parentContent!: string;
+
+
+  @ViewChild(PostComponent) childComponent!: PostComponent;
 
   ngAfterViewInit() {
     console.log(this.childComponent);
+
+    this.parentContent = this.childComponent.contentOfChild;
+
+    this.title = this.childComponent.messageFromChild;
+
+    this.cd.detectChanges();
+
 
   }
 

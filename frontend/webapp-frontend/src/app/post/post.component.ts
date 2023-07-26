@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent {
+  contentOfChild: string = 'contentOfChild';
   messageFromChild: string = 'Hi Parent!';
 }
