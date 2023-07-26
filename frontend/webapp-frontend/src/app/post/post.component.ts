@@ -1,5 +1,4 @@
-import {  Component } from '@angular/core';
-
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -7,7 +6,5 @@ import {  Component } from '@angular/core';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent {
-
-  
-
+  messageFromChild: string = 'Hi Parent!';
 }
