@@ -1,0 +1,14 @@
+.center{
+    border-radius: 5px;
+    border-color: rgb(240, 255, 243);
+}
+
+h1 {
+    color: aqua;
+    font-family: sans-serif;
+    font-weight:calc();
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
