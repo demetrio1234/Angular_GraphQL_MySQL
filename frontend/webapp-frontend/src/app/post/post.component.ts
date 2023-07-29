@@ -6,18 +6,15 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-  ngOnInit(): void {
-    //
-  }
-  contentOfChild: string = 'contentOfChild';
-  messageFromChild: string = 'Hi Parent!';
-
   @Output() outputEventEmitter = new EventEmitter<string>();
-
-  ouputFromPost: string = 'output message from Post Component';
-
-  sendMessageEvent(){
-    console.log('sendMessageEvent works!');
+  contentOfChild: string = 
+      'contentOfChild';
+  messageFromChild: string = 
+      'Hi Parent!';
+  ouputFromPost: string = 
+      'output message from Post Component';
+  ngOnInit(): void {}
+  sendMessageEvent(){ 
+      console.log('sendMessageEvent works!');
   }
-
 }

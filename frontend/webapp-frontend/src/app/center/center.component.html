@@ -1,7 +1,9 @@
 <div>
     <section>
         <p>{{center}}</p>
-        <app-post-element (outputEventEmitter)='reciveMessage($event)'></app-post-element>
+        <app-post-element (outputEventEmitter)='reciveMessage($event)'>
+        </app-post-element>
         <p>{{recivedOutputFromChild}}</p>
+        <p>{{inputMessageFromParent}}</p>
     </section>
 </div>
