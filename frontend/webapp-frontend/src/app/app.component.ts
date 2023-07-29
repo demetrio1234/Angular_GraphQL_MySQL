@@ -7,15 +7,21 @@ import { PostComponent } from './post/post.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit {
+  
   @ViewChild(PostComponent) childComponent!: PostComponent;
+  
   constructor(private cd: ChangeDetectorRef) { }
+  
   title: string = 'webapp-frontend';
-  parentContent!: string;
-  inputMessageFromParent:string='Hi son!';
+   
+  inputMessageFromParent:string='this is the inputMessageFromParent';
+
   ngAfterViewInit() {
-    console.log(this.childComponent);
-    this.parentContent = this.childComponent.contentOfChild;
+
     this.title = this.childComponent.messageFromChild;
+    
     this.cd.detectChanges();
+
   }
+  
 }
