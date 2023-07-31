@@ -17,7 +17,9 @@ export class CenterComponent implements OnInit, AfterViewInit {
   recivedOutputFromChild: string = '';
   
   ngAfterViewInit(): void {
-    this.center = this.postElementComponent.messageFromPostElement;
+    this.center = 
+      this.postElementComponent.
+        messageFromPostElement;
   }
   
   ngOnInit(): void { }
