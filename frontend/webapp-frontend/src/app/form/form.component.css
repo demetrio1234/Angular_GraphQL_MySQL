@@ -1,0 +1,20 @@
+html, body{
+    color: black;
+    background-color: beige;
+    font-family: Roboto 8pt;
+}
+
+h1, input, textarea{
+    display: block;
+    margin: 10pt;
+}
+
+.title-color{
+    color: blueviolet;
+}
+
+.title-backgroundcolor{
+    background-color: red;
+    padding:10px;
+}
+

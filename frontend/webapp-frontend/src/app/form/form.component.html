@@ -1,0 +1,26 @@
+<div class="center">
+    <h1 id="">Post Form</h1>
+    
+    <form action="" method="post" >
+
+        <input type="text" name="post_title" value="" placeholder="Post title" id="post_title" [(ngModel)]="postTitle"/>
+
+        <textarea name="post_details" rows="8" cols="40" placeholder="Post Details" id="post_details" [(ngModel)]="postDetails">{{postDetails}}</textarea>
+
+        <input type="text" name="post_image_url" value="" placeholder="Post Image URL" id="post_image_url" [(ngModel)]="postImageURL"/>
+
+        <input type="text" name="post_url" value="_blank" placeholder="Post URL" id="post_url" [(ngModel)]="postURL"/>
+
+        <input type="checkbox" id="add_background" name="add_background" id="add_background" [(ngModel)]="addBackground"/>
+
+        <label for="add_background">Add Background</label>
+
+        <p><input type="submit" value="Continue" id="btn_continue"/></p>
+    </form>
+
+    <h1 [class.title-backgroundcolor]="addBackground">{{postTitle}}</h1>
+    <p>{{postDetails}}</p>
+    <img [src]="postImageURL" alt="" />
+    <a [href]="postURL" [style.display]="(postURL.length > 0) ? 'block':'none'">Click here</a>
+
+</div>

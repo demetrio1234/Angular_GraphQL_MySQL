@@ -9,7 +9,8 @@ import { RightbarComponent } from './rightbar/rightbar.component';
 import { CenterComponent } from './center/center.component';
 import { PostComponent } from './post/post.component';
 import { PostElementComponent } from './post-element/post-element.component';
-import {FormsModule } from '@angular/forms'
+import {FormsModule } from '@angular/forms';
+import { FormComponent } from './form/form.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import {FormsModule } from '@angular/forms'
     RightbarComponent,
     CenterComponent,
     PostComponent,
-    PostElementComponent
+    PostElementComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
