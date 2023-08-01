@@ -9,7 +9,7 @@ import { RightbarComponent } from './rightbar/rightbar.component';
 import { CenterComponent } from './center/center.component';
 import { PostComponent } from './post/post.component';
 import { PostElementComponent } from './post-element/post-element.component';
-
+import {FormsModule } from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,8 @@ import { PostElementComponent } from './post-element/post-element.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
