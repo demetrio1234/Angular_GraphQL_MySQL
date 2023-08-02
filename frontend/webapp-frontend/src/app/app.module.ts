@@ -10,7 +10,8 @@ import { CenterComponent } from './center/center.component';
 import { PostComponent } from './post/post.component';
 import { PostElementComponent } from './post-element/post-element.component';
 import {FormsModule } from '@angular/forms';
-import { FormComponent } from './form/form.component'
+import { FormComponent } from './form/form.component';
+import { UnsortedlistComponent } from './unsortedlist/unsortedlist.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { FormComponent } from './form/form.component'
     CenterComponent,
     PostComponent,
     PostElementComponent,
-    FormComponent
+    FormComponent,
+    UnsortedlistComponent
   ],
   imports: [
     BrowserModule,
