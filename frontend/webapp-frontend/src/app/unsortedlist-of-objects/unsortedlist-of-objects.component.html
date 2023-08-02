@@ -1,3 +1,13 @@
 <ul>
     <li *ngFor="let post of objectsArray ">{{post.objectName | json}}</li>
 </ul>
+
+<ul>
+    <li *ngFor="let message of messageArray">{{ message.id | json }} | {{ message.user | json}}
+        <button (click)="removeObjectById(message)">Remove Object from Array by ID</button>
+    </li>
+</ul>
+
+<input type="text" name="" id="" [(ngModel)]="tempInput">
+    <button (click)="addNew()">Add new Item to Array</button><br><br>
+<input type="text" [(ngModel)]="objectIndex">
