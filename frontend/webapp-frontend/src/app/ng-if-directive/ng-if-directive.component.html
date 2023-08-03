@@ -1,0 +1,22 @@
+<section>
+
+<h1>Fetching Object Array</h1>
+    
+<div>
+    <input type="text" [(ngModel)]="inputField">
+    <button (click)="addNewData()">Add new Data</button>
+</div>
+</section>
+
+<div *ngIf=" dataObject.length > 0">
+    <ul>
+        <li *ngFor="let dataobject of dataObject; let i = index">
+            {{dataobject.name}}
+            <button (click)="deleteObject(i)">Delete Object</button>
+        </li>
+    </ul>
+</div>
+
+<div *ngIf=" dataObject.length == 0">
+    <p>There is no data to show....</p>
+</div>

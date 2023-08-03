@@ -12,7 +12,8 @@ import { PostElementComponent } from './post-element/post-element.component';
 import {FormsModule } from '@angular/forms';
 import { FormComponent } from './form/form.component';
 import { UnsortedlistComponent } from './unsortedlist/unsortedlist.component';
-import { UnsortedlistOfObjectsComponent } from './unsortedlist-of-objects/unsortedlist-of-objects.component'
+import { UnsortedlistOfObjectsComponent } from './unsortedlist-of-objects/unsortedlist-of-objects.component';
+import { NgIFDirectiveComponent } from './ng-if-directive/ng-if-directive.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { UnsortedlistOfObjectsComponent } from './unsortedlist-of-objects/unsort
     PostElementComponent,
     FormComponent,
     UnsortedlistComponent,
-    UnsortedlistOfObjectsComponent
+    UnsortedlistOfObjectsComponent,
+    NgIFDirectiveComponent
   ],
   imports: [
     BrowserModule,
