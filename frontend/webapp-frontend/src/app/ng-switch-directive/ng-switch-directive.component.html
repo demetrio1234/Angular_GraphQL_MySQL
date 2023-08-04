@@ -1,0 +1,17 @@
+<div>
+    <button (click)="onClick('step 1')">Step 1</button>
+    <button (click)="onClick('step 2')">Step 2</button>
+    <button (click)="onClick('step 3')">Step 3</button>
+    <button (click)="onClick('step 4')">Step 4</button>
+</div>
+
+<br><br>
+
+<div [ngSwitch]="stepForm">
+    <div *ngSwitchCase="'step 1'">Step 1 Form</div>
+    <div *ngSwitchCase="'step 2'">Step 2 Form</div>
+    <div *ngSwitchCase="'step 3'">Step 3 Form</div>
+    <div *ngSwitchCase="'step 4'">Step 4 Form</div>
+    
+    <button *ngSwitchDefault="'default'">Default</button>
+</div>

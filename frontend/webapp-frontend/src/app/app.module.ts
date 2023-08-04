@@ -13,7 +13,8 @@ import {FormsModule } from '@angular/forms';
 import { FormComponent } from './form/form.component';
 import { UnsortedlistComponent } from './unsortedlist/unsortedlist.component';
 import { UnsortedlistOfObjectsComponent } from './unsortedlist-of-objects/unsortedlist-of-objects.component';
-import { NgIFDirectiveComponent } from './ng-if-directive/ng-if-directive.component'
+import { NgIFDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
+import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { NgIFDirectiveComponent } from './ng-if-directive/ng-if-directive.compon
     FormComponent,
     UnsortedlistComponent,
     UnsortedlistOfObjectsComponent,
-    NgIFDirectiveComponent
+    NgIFDirectiveComponent,
+    NgSwitchDirectiveComponent
   ],
   imports: [
     BrowserModule,

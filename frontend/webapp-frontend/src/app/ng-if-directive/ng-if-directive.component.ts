@@ -17,7 +17,7 @@ export class NgIFDirectiveComponent implements DataObject {
   inputField: any;
 
   deleteObject(i: number) {
-
+    this.dataObject.splice(i, 1);
   }
   addNewData() {
     this.dataObject.push({ id: 1, name: '', surname: '', birthdate: '' });
