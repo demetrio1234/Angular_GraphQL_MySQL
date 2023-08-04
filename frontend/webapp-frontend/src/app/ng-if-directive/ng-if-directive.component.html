@@ -14,9 +14,30 @@
             {{dataobject.name}}
             <button (click)="deleteObject(i)">Delete Object</button>
         </li>
-    </ul>
+    </ul>   
 </div>
 
 <div *ngIf=" dataObject.length == 0">
     <p>There is no data to show....</p>
 </div>
+
+<div class="container" *ngIf="dataObject.length; else noCourses">
+    <h1>All Courses</h1>
+    ....
+  </div>  
+  
+  <ng-template #noCourses>
+    <h1>No courses available.</h1>
+  </ng-template>
+
+  <ng-container *ngIf="dataObject.length; then coursesList; else noCourses">
+</ng-container>
+
+<ng-template #coursesList>
+ <h1>All courses available</h1>
+ ....
+</ng-template>
+
+<ng-template #noCourses>
+ <h1>No courses available.</h1>
+</ng-template>
