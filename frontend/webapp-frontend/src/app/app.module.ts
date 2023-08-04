@@ -14,7 +14,8 @@ import { FormComponent } from './form/form.component';
 import { UnsortedlistComponent } from './unsortedlist/unsortedlist.component';
 import { UnsortedlistOfObjectsComponent } from './unsortedlist-of-objects/unsortedlist-of-objects.component';
 import { NgIFDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
-import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component'
+import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component';
+import { NgStyleDirectiveComponent } from './ng-style-directive/ng-style-directive.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-dire
     UnsortedlistComponent,
     UnsortedlistOfObjectsComponent,
     NgIFDirectiveComponent,
-    NgSwitchDirectiveComponent
+    NgSwitchDirectiveComponent,
+    NgStyleDirectiveComponent
   ],
   imports: [
     BrowserModule,
