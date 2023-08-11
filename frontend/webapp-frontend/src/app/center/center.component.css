@@ -1,0 +1,53 @@
+
+div > form {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+form > div, div a:first-child:visited{
+    display: inline-block;
+    margin: 10px;
+}
+
+label + input{
+    margin-left: 5px;
+}
+
+label{
+    display: inline-block;
+    min-width: fit-content;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+  }
+  
+  /* visited link */
+div a:first-child:visited {
+    color: grey;
+    
+}
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+
+  .form-container {
+    z-index: 1; 
+    background-color: aqua;
+  }
+
+  .toast-class {
+    background-color: aquamarine;
+    z-index: 2;
+    visibility: visible;
+  }

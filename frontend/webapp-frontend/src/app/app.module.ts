@@ -16,7 +16,10 @@ import { UnsortedlistOfObjectsComponent } from './unsortedlist-of-objects/unsort
 import { NgIFDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
 import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component';
 import { NgStyleDirectiveComponent } from './ng-style-directive/ng-style-directive.component';
-import { NgClassDirectiveComponent } from './ng-class-directive/ng-class-directive.component'
+import { NgClassDirectiveComponent } from './ng-class-directive/ng-class-directive.component';
+import { BackgroundComponent } from './background/background.component';
+import { ToastComponent } from './toast/toast.component';
+import { CustomValidatorsComponent } from './custom-validators/custom-validators.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +35,10 @@ import { NgClassDirectiveComponent } from './ng-class-directive/ng-class-directi
     NgIFDirectiveComponent,
     NgSwitchDirectiveComponent,
     NgStyleDirectiveComponent,
-    NgClassDirectiveComponent
+    NgClassDirectiveComponent,
+    BackgroundComponent,
+    ToastComponent,
+    CustomValidatorsComponent
   ],
   imports: [
     BrowserModule,
